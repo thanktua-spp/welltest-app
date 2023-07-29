@@ -4,3 +4,4 @@ prophet
 xgboost
 pickle5
 gradio
+openpyxl
