@@ -16,5 +16,5 @@ jobs:
           lfs: true
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.HF-Deploy }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: git push https://ThankGod:$HF_TOKEN@huggingface.co/spaces/ThankGod/welltest-app main
