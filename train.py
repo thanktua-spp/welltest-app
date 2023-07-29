@@ -27,6 +27,8 @@ target='y'
 data = welltest_new.rename(columns={'OilRate': 'y'})
 data = prepare_prophet_data(data)
 train_data, test_data = train_test_split(data, test_size=0.2, shuffle=True)
+
+print(train_data.head(3))
 models = train_models(train_data, drop_col, target)
 
 decision_tree_model, rf_model, xgb_model, _ = models
